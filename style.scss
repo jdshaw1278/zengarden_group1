@@ -1,0 +1,156 @@
+@import 'partials/reset';
+@import 'partials/prefix-mixins';
+/* Variables */
+@import 'partials/variables';
+/* Sitewide Color settings */
+@import 'partials/colors';
+/* Navigation Settings */
+@import 'partials/navigation';
+//responsive layouts
+@import 'partials/layout';
+/* Sitewide typography */
+@import 'partials/typography';
+
+
+.intro {
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
+
+.explanation,
+.benefits,
+.requirements p:nth-child(6) {
+  text-align: right;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto repeat(6, 50px) auto;
+  text-align: center;
+
+  .zen-license,
+  .zen-accessibility,
+  .zen-github {
+    grid-row: 2;
+  }
+
+  .zen-validate-html {
+    grid-column: 3/5;
+  }
+
+  .zen-validate-css {
+    grid-column: 5/7;
+  }
+
+  .zen-license {
+    grid-column: 2/4;
+  }
+
+  .zen-accessibility {
+    grid-column: 4/6;
+  }
+
+  .zen-github {
+    grid-column: 6/8;
+  }
+}
+
+.select,
+.resources {
+  text-align: center;
+}
+
+.archives,
+.next {
+  display: none;
+}
+
+.design-selection ul {
+  display: grid;
+  grid-template-columns: auto 100px 100px auto;
+  grid-gap: 10px;
+  text-align: center;
+
+  li:nth-child(odd) {
+    grid-column: 2;
+  }
+
+  li:nth-child(even) {
+    grid-column: 3;
+  }
+}
+
+.zen-resources ul {
+  display: grid;
+  grid-template-columns: auto repeat(6, 50px) auto;
+  text-align: center;
+  grid-gap: 10px;
+
+  .view-css {
+    grid-column: 2/4;
+  }
+
+  .css-resources {
+    grid-column: 4/6;
+  }
+
+  .zen-faq {
+    grid-column: 6/8;
+  }
+
+  .zen-submit,
+  .zen-translations {
+    grid-row: 2;
+  }
+
+  .zen-submit {
+    grid-column: 3/5;
+  }
+
+  .zen-translations {
+    grid-column: 5/7;
+  }
+}
+
+footer a {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.design-selection li {
+  width: 90px;
+  height: 80px;
+  padding: 10px 5px 10px 5px;
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 0;
+}
+
+.zen-resources li {
+  list-style: none;
+  width: 90px;
+  height: 80px;
+  padding: 10px 5px 10px 5px;
+}
+
+.design-archives {
+  display: flex;
+  justify-content: center;
+}
+
+.viewall {
+  list-style: none;
+  text-align: center;
+  margin-top: 10px;
+  width: 210px;
+  height: 100px;
+  line-height: 100px;
+}
+
+@media only screen and (min-width: $M) {
+  @import 'partials/responsive'
+}

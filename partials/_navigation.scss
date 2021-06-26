@@ -1,0 +1,8 @@
+footer a, .design-selection li, .viewall, .zen-resources li {
+    background-color: $color-4;  
+    border-radius: 25px;
+  }
+  footer a:hover, .design-selection li:hover, .viewall:hover, .zen-resources li:hover {
+      background-color: lighten($color-4, 25%);
+      color: $color-1;
+  }
