@@ -140,12 +140,20 @@ p a {
 }
 
 body {
-  padding: 5vw;
+  padding: 2vw;
 }
 
 .intro h1,
 .intro h2 {
   text-align: center;
+}
+
+p {
+  padding-top: 10px;
+}
+
+h3 {
+  padding-top: 5px;
 }
 
 .explanation,
@@ -317,6 +325,9 @@ footer a {
 @media only screen and (min-width: 1024px) {
   body {
     padding: 50px;
+  }
+  p {
+    padding-top: 5px;
   }
   footer,
   .design-selection ul,
