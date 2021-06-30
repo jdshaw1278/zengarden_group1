@@ -11,7 +11,10 @@
 /* Sitewide typography */
 @import 'partials/typography';
 
-
+//Small Screen Format
+body {
+  padding: 2vw;
+}
 .intro {
 
   h1,
