@@ -139,12 +139,18 @@ p a {
   }
 }
 
+body {
+  padding: 5vw;
+}
+
 .intro h1,
 .intro h2 {
   text-align: center;
 }
 
-.explanation, .benefits, .requirements p:nth-child(6) {
+.explanation,
+.benefits,
+.requirements p:nth-child(6) {
   text-align: right;
 }
 
@@ -156,7 +162,9 @@ footer {
   text-align: center;
 }
 
-footer .zen-license, footer .zen-accessibility, footer .zen-github {
+footer .zen-license,
+footer .zen-accessibility,
+footer .zen-github {
   -ms-grid-row: 2;
   grid-row: 2;
 }
@@ -191,11 +199,13 @@ footer .zen-github {
   grid-column: 6/8;
 }
 
-.select, .resources {
+.select,
+.resources {
   text-align: center;
 }
 
-.archives, .next {
+.archives,
+.next {
   display: none;
 }
 
@@ -245,7 +255,8 @@ footer .zen-github {
   grid-column: 6/8;
 }
 
-.zen-resources ul .zen-submit, .zen-resources ul .zen-translations {
+.zen-resources ul .zen-submit,
+.zen-resources ul .zen-translations {
   -ms-grid-row: 2;
   grid-row: 2;
 }
