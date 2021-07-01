@@ -78,8 +78,8 @@ footer {
 
 .design-selection ul {
   display: grid;
-  grid-template-columns: auto 100px 100px auto;
-  grid-gap: 10px;
+  grid-template-columns: auto 120px 120px auto;
+  grid-gap: 16px;
   text-align: center;
 
   li:nth-child(odd) {
@@ -130,7 +130,7 @@ footer a {
 }
 
 .design-selection li {
-  width: 90px;
+  width: 120px;
   height: 80px;
   padding: 10px 5px 10px 5px;
   margin-top: 10px;
@@ -158,6 +158,16 @@ footer a {
   height: 100px;
   line-height: 100px;
 }
+
+.design-selection a,
+.viewall a,
+.zen-resources a,
+footer a {
+  text-decoration: none;
+  color: $color-2;
+  align-items: center;
+}
+
 
 @media only screen and (min-width: $M) {
   @import 'partials/responsive'

@@ -65,13 +65,26 @@ header {
 }
 
 /* Navigation Settings */
-footer a, .design-selection li, .viewall, .zen-resources li {
+footer a, .viewall, .zen-resources li {
   background-color: #9babb2;
   border-radius: 25px;
 }
 
-footer a:hover, .design-selection li:hover, .viewall:hover, .zen-resources li:hover {
+footer a:hover, .viewall:hover, .zen-resources li:hover {
   background-color: #e3e8e9;
+  color: #568c63;
+}
+
+.design-selection li {
+  background-image: url(assets/large_rock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
+
+.design-selection li:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
   color: #568c63;
 }
 
@@ -220,9 +233,9 @@ footer .zen-github {
 .design-selection ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 100px 100px auto;
-      grid-template-columns: auto 100px 100px auto;
-  grid-gap: 10px;
+  -ms-grid-columns: auto 120px 120px auto;
+      grid-template-columns: auto 120px 120px auto;
+  grid-gap: 16px;
   text-align: center;
 }
 
@@ -288,7 +301,7 @@ footer a {
 }
 
 .design-selection li {
-  width: 90px;
+  width: 120px;
   height: 80px;
   padding: 10px 5px 10px 5px;
   margin-top: 10px;
@@ -320,6 +333,17 @@ footer a {
   width: 210px;
   height: 100px;
   line-height: 100px;
+}
+
+.design-selection a,
+.viewall a,
+.zen-resources a,
+footer a {
+  text-decoration: none;
+  color: #485947;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -380,7 +404,7 @@ footer a {
     grid-column: 1/2;
     -ms-grid-row: 3;
     grid-row: 3;
-    background-image: url(assets/blank_img.png);
+    background-image: url(assets/sand.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: border-box;
@@ -412,7 +436,7 @@ footer a {
   .supporting .participation {
     -ms-grid-row: 2;
     grid-row: 2;
-    background-image: url(assets/blank_img.png);
+    background-image: url(assets/sand.png);
     background-repeat: no-repeat;
     background-position: right;
     background-origin: border-box;
