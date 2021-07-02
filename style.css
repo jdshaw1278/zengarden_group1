@@ -249,6 +249,15 @@ footer .zen-github {
   grid-column: 3;
 }
 
+.design-selection ul li a:nth-child(1) {
+  margin-bottom: -16px;
+  margin-top: 14px;
+}
+
+.design-selection ul li a:nth-child(2) {
+  margin-top: -15px;
+}
+
 .zen-resources ul {
   display: -ms-grid;
   display: grid;
@@ -308,6 +317,12 @@ footer a {
   display: -ms-grid;
   display: grid;
   grid-gap: 0;
+  font-size: x-small;
+}
+
+.design-selection li a {
+  padding-bottom: 0%;
+  line-height: 19px;
 }
 
 .zen-resources li {
