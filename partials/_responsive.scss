@@ -11,6 +11,10 @@ footer,
 .design-archives {
   display: inline;
 }
+footer {
+  background-image: none;
+  background-size: auto;
+}
 
 .select,
 .resources {
@@ -99,6 +103,31 @@ footer,
   footer {
     grid-column: 2/4;
     grid-row: 5;
+    display: grid;
+    grid-template-columns: 200px repeat(5, 80px) auto;
+    grid-template-rows: auto 83.2px;
+    .zen-validate-html {
+      grid-column: 2;
+    }
+    .zen-validate-css {
+      grid-column: 3;      
+    }
+    .zen-license {
+      grid-column: 4;
+    }
+    .zen-accessibility {
+      grid-column: 5;
+    }
+    .zen-github {
+      grid-column: 6;
+    }
+    .zen-validate-html,  .zen-validate-css, .zen-license,
+    .zen-accessibility,
+    .zen-github {
+      grid-row: 2;
+      display: flex;
+      align-items: center;
+    }
   }
 }
 

@@ -37,12 +37,21 @@ h3 {
 footer {
   display: grid;
   grid-template-columns: auto repeat(6, 50px) auto;
+  grid-template-rows: 100px 50px 50px 100px;
+  background-image: url(assets/border_with_leaves.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 335px 300px;
   text-align: center;
+
+  .zen-validate-html,  .zen-validate-css {
+    grid-row: 2;
+  }
 
   .zen-license,
   .zen-accessibility,
   .zen-github {
-    grid-row: 2;
+    grid-row: 3;
   }
 
   .zen-validate-html {
@@ -140,9 +149,8 @@ footer {
 }
 
 footer a {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .design-selection li {
