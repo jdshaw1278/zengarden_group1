@@ -24,3 +24,11 @@ footer a, /*.design-selection li,*/ .viewall, .zen-resources li {
         color: $color-1;
       }
   }
+
+  .viewall {
+    background-color: $color-5;
+    background-image: url(assets/border_sm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 256px 97px;
+  }

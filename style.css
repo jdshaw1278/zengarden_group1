@@ -96,6 +96,14 @@ footer a:hover, .viewall:hover, .zen-resources li:hover {
   color: #568c63;
 }
 
+.viewall {
+  background-color: #f2eee3;
+  background-image: url(assets/border_sm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 256px 97px;
+}
+
 /* Sitewide typography */
 h1,
 h2, h3 {
@@ -369,12 +377,12 @@ footer a {
 }
 
 .viewall {
+  font-size: 150%;
   list-style: none;
   text-align: center;
-  margin-top: 10px;
-  width: 210px;
   height: 100px;
-  line-height: 100px;
+  width: 260px;
+  padding-top: 75px;
 }
 
 .design-selection a,
@@ -552,7 +560,11 @@ footer a {
     padding: 20px;
   }
   .viewall {
-    width: 100px;
+    font-size: 90%;
+    height: 50px;
+    width: 125px;
+    padding-top: 35px;
+    background-size: 123px 47px;
   }
 }
 /*# sourceMappingURL=style.css.map */
