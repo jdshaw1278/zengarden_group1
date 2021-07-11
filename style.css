@@ -85,6 +85,14 @@ footer a:hover, .viewall:hover, .zen-resources li:hover {
 .design-selection li:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
+}
+
+.design-selection li:hover li, .design-selection li:hover .designer-name {
+  color: transparent;
+  clear: both;
+}
+
+.design-selection li:hover .design-name {
   color: #568c63;
 }
 
@@ -249,13 +257,32 @@ footer .zen-github {
   grid-column: 3;
 }
 
-.design-selection ul li a:nth-child(1) {
-  margin-bottom: -16px;
-  margin-top: 14px;
+.design-selection ul li, .design-selection ul .designer-name {
+  color: transparent;
+  clear: both;
 }
 
-.design-selection ul li a:nth-child(2) {
-  margin-top: -15px;
+.design-selection ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 20px 1fr 20px;
+      grid-template-rows: 20px 1fr 20px;
+}
+
+.design-selection ul .design-name {
+  color: #485947;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-size: medium;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 
 .zen-resources ul {

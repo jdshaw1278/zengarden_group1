@@ -90,14 +90,30 @@ footer {
     grid-column: 3;
   }
   li a:nth-child(1) {
-    margin-bottom: -16px;
-    margin-top: 14px;
+ //   margin-top: 30px;
   }
   li a:nth-child(2) {
-    margin-top: -15px;
+  //  margin-top: -15px;
+  }
+
+  li, .designer-name {
+    color: transparent;
+    clear: both;
+  }
+  li {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20px 1fr 20px; 
+  }
+  .design-name {
+    color: $color-2;
+    grid-row: 2;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    margin: auto;
   }
 }
-
 .zen-resources ul {
   display: grid;
   grid-template-columns: auto repeat(6, 50px) auto;

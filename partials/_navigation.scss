@@ -16,5 +16,11 @@ footer a, /*.design-selection li,*/ .viewall, .zen-resources li {
 
   .design-selection li:hover {
       transform: scale(1.25);
-      color: $color-1;
+      li, .designer-name {
+        color: transparent;
+        clear: both;
+      }
+      .design-name {
+        color: $color-1;
+      }
   }
