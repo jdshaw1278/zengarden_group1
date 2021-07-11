@@ -1,13 +1,13 @@
-footer a, /*.design-selection li,*/ .viewall, .zen-resources li {
+footer a,  .viewall,  {
     background-color: $color-4;
     border-radius: 25px;
   }
-  footer a:hover, /*.design-selection li:hover,*/ .viewall:hover, .zen-resources li:hover {
+  footer a:hover,  .viewall:hover,  {
       background-color: lighten($color-4, 25%);
       color: $color-1;
   }
 
-  .design-selection li {
+  .design-selection li, .zen-resources li {
     background-image: url(assets/large_rock.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -24,6 +24,11 @@ footer a, /*.design-selection li,*/ .viewall, .zen-resources li {
         color: $color-1;
       }
   }
+
+  .zen-resources li:hover {
+    transform: scale(1.25);
+    color: $color-1;
+}
 
   .viewall {
     background-color: $color-5;

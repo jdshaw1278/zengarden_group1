@@ -65,17 +65,17 @@ header {
 }
 
 /* Navigation Settings */
-footer a, .viewall, .zen-resources li {
+footer a, .viewall {
   background-color: #9babb2;
   border-radius: 25px;
 }
 
-footer a:hover, .viewall:hover, .zen-resources li:hover {
+footer a:hover, .viewall:hover {
   background-color: #e3e8e9;
   color: #568c63;
 }
 
-.design-selection li {
+.design-selection li, .zen-resources li {
   background-image: url(assets/large_rock.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -93,6 +93,12 @@ footer a:hover, .viewall:hover, .zen-resources li:hover {
 }
 
 .design-selection li:hover .design-name {
+  color: #568c63;
+}
+
+.zen-resources li:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
   color: #568c63;
 }
 
@@ -361,10 +367,17 @@ footer a {
 }
 
 .zen-resources li {
-  list-style: none;
-  width: 90px;
+  width: 120px;
   height: 80px;
-  padding: 10px 5px 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .design-archives {

@@ -89,13 +89,6 @@ footer {
   li:nth-child(even) {
     grid-column: 3;
   }
-  li a:nth-child(1) {
- //   margin-top: 30px;
-  }
-  li a:nth-child(2) {
-  //  margin-top: -15px;
-  }
-
   li, .designer-name {
     color: transparent;
     clear: both;
@@ -167,11 +160,13 @@ footer a {
 }
 
 .zen-resources li {
-  list-style: none;
-  width: 90px;
+  width: 120px;
   height: 80px;
-  padding: 10px 5px 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .design-archives {
   display: flex;
