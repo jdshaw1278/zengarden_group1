@@ -37,6 +37,9 @@ header {
   border-color: $color-3;
   border-radius: 5px 5px 0 0;
   margin-bottom: -20px;
+  h2 {
+    padding-bottom: 7px;
+  }
 }
 .summary {
   border-style: solid solid none solid;

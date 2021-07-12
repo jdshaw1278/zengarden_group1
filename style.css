@@ -198,16 +198,20 @@ h3 {
 }
 
 header {
-  border-style: double double none double;
-  border-width: 5px;
+  border-style: solid solid none solid;
+  border-width: 10px;
   border-color: #756a5a;
   border-radius: 5px 5px 0 0;
   margin-bottom: -20px;
 }
 
+header h2 {
+  padding-bottom: 7px;
+}
+
 .summary {
-  border-style: none double double double;
-  border-width: 5px;
+  border-style: solid solid none solid;
+  border-width: 10px;
   border-color: #756a5a;
   border-radius: 0 0 5px 5px;
   padding-left: 3px;
@@ -216,10 +220,10 @@ header {
 
 .preamble {
   background-color: #f2eee3;
-  background-image: url(assets/bamboo_side.png);
+  background-image: url(assets/bamboo_sidestick.png);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 250px 72px;
+  background-size: 500px;
 }
 
 .preamble h3 {
@@ -228,10 +232,10 @@ header {
 
 .benefits {
   background-color: #f2eee3;
-  background-image: url(assets/bamboo_side.png);
+  background-image: url(assets/bamboo_sidestick.png);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 250px 72px;
+  background-size: 500px;
 }
 
 .benefits h3 {
