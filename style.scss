@@ -16,7 +16,9 @@ body {
   padding: 2vw;
 }
 .intro {
-
+  h1 {
+    padding-top: 5px;
+  }
   h1,
   h2 {
     text-align: center;
@@ -27,6 +29,42 @@ p {
 }
 h3 {
   padding-top: 5px;
+}
+
+header {
+  border-style: double double none double;
+  border-width: 5px;
+  border-color: $color-3;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: -20px;
+}
+.summary {
+  border-style: none double double double;
+  border-width: 5px;
+  border-color: $color-3;
+  border-radius: 0 0 5px 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.preamble {
+  background-color: $color-5;
+  background-image: url(assets/bamboo_side.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 250px 72px;
+  h3 {
+    padding-top: 75px;
+  }
+}
+.benefits {
+  background-color: $color-5;
+  background-image: url(assets/bamboo_side.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 250px 72px;
+  h3 {
+    padding-top: 90px;
+  }
 }
 .explanation,
 .benefits,
