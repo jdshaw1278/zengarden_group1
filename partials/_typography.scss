@@ -41,14 +41,15 @@ p {
   line-height: 1.4;
   color: lighten($color-2, 25%);
 
-  a {
-    font-family: $link-font;
-    color: $color-1;
-    text-decoration: underline;
-  }
-
+  
   @include MQ(S) {
     font-size: 1.6rem;
     line-height: 1.6;
   }
 }
+
+a {
+    font-family: $link-font;
+    color: $color-1;
+    text-decoration: underline;
+  }
